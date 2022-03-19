@@ -1,0 +1,32 @@
+<form [formGroup]="consultForm" (ngSubmit)="onSubmit()">
+  <div class="Form-group" formGroupNam='consulta-cep' >
+
+    <br><br>
+    <label for="cep">CEP:</label><br>
+    <input type="text" class="Form-control" id="cep" formControlName="cep">
+
+    <br><br>
+    <label for="logradouro">LOGRADOURO</label><br>
+    <input type="text" class="Form-control" id="logradouro" formControlName="logradouro" placeholder="...">
+
+    <br><br>
+    <label for="bairro">BAIRRO</label><br>
+    <input type="text" class="Form-control" id="bairro" formControlName="bairro" placeholder="...">
+
+    <br><br>
+    <label for="cidade">CIDADE</label><br>
+    <input type="text" class="Form-control" id="cidade" formControlName="cidade" placeholder="...">
+
+    <br><br>
+    <label for="uf">UF</label><br>
+    <input type="text" class="Form-control" id="uf" formControlName="uf" placeholder="...">
+
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+
+</form>
+
+
